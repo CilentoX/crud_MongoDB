@@ -19,15 +19,15 @@ server.listen(process.env.PORT, () => {
     console.group(`Available routes:`);
     console.log(` 🟢 | GET http://localhost:${process.env.PORT}/api/v1/ping`);
     console.log(` 🟢 | GET http://localhost:${process.env.PORT}/api/v1/users`);
-    console.log(` 🟢 | GET http://localhost:${process.env.PORT}/api/v1/user`);
+    console.log(` 🟢 | GET http://localhost:${process.env.PORT}/api/v1/user/:id`);
     console.log(` 🟠 | POST http://localhost:${process.env.PORT}/api/v1/users`);
     console.log(
       ` 🔴 | DELETE http://localhost:${process.env.PORT}/api/v1/users`
     );
     console.log(
-      ` 🔴 | DELETE http://localhost:${process.env.PORT}/api/v1/user`
+      ` 🔴 | DELETE http://localhost:${process.env.PORT}/api/v1/user/:id`
     );
-    console.log(` 🔵 | PUT http://localhost:${process.env.PORT}/api/v1/user`);
+    console.log(` 🔵 | PUT http://localhost:${process.env.PORT}/api/v1/user/:id`);
     console.groupEnd();
   });
 });
